@@ -2,8 +2,8 @@
 # Compiles everything and runs every self-checking example. Exit code 0 = all passed.
 #   scripts/check_all.sh              all languages
 #   scripts/check_all.sh java go      only some
-# Java: the whole tree is compiled; only java/src/interview mains are run (they assert their
-# answers). Older Java programs elsewhere may wait for keyboard input, so they are compile-checked.
+# Java: the whole tree is compiled; every program that uses common.Check (i.e. asserts its own
+# answers) is run. Older Java programs may wait for keyboard input, so they are only compile-checked.
 set -uo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 LANGS=("$@")
@@ -18,7 +18,7 @@ for lang in "${LANGS[@]}"; do
       out=$(mktemp -d)
       javac -nowarn -d "$out" $(find "$ROOT/java/src" -name '*.java') 2>&1 | grep -v '^Note:'
       report "${PIPESTATUS[0]}" "javac (whole java/src tree)"
-      for f in $(grep -rlE 'static +void +main' "$ROOT/java/src/interview" | sort); do
+      for f in $(grep -rl 'import common.Check;' "$ROOT/java/src" | xargs grep -lE 'static +void +main' | sort); do
         cls=$(realpath --relative-to="$ROOT/java/src" "$f" | sed 's/\.java$//; s|/|.|g')
         timeout 60 java -cp "$out" "$cls" </dev/null >/dev/null 2>&1; report $? "$cls"
       done ;;
