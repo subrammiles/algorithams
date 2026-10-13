@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Small but frequently asked building blocks.

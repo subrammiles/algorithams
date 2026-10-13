@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Convert a binary tree to a string and back.

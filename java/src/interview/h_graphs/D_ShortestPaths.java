@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Choosing a shortest path algorithm is a common senior-level discussion:

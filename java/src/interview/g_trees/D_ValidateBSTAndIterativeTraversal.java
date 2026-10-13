@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * 1. Validate BST: pass down (low, high) bounds. Comparing only with direct children is the

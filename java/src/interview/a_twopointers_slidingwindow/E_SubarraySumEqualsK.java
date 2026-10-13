@@ -3,7 +3,7 @@ package interview.a_twopointers_slidingwindow;
 import java.util.HashMap;
 import java.util.Map;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Count contiguous subarrays whose sum equals k (values may be negative).

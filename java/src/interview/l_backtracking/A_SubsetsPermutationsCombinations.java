@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * One backtracking template covers subsets, permutations and combinations:

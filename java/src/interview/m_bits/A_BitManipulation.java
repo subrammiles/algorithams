@@ -1,6 +1,6 @@
 package interview.m_bits;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Bit manipulation cheat sheet:

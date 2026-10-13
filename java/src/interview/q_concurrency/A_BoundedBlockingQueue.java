@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Implement a thread-safe bounded blocking queue (producer-consumer).

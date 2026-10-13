@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Least Frequently Used cache, O(1) get/put. Ties broken by least recently used.

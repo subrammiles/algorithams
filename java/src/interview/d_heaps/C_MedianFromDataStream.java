@@ -3,7 +3,7 @@ package interview.d_heaps;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Support addNum(x) and findMedian() over a stream.

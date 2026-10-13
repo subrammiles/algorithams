@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Words are sorted in an unknown alphabet. Derive a valid letter order, or "" if invalid.

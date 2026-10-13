@@ -3,7 +3,7 @@ package interview.a_twopointers_slidingwindow;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: For each window of size k, report the maximum.

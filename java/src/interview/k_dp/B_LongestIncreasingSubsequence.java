@@ -2,7 +2,7 @@ package interview.k_dp;
 
 import java.util.Arrays;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Length of the longest strictly increasing subsequence.

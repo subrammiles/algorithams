@@ -1,6 +1,6 @@
 package interview.a_twopointers_slidingwindow;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Smallest substring of s that contains every character of t (with multiplicity).

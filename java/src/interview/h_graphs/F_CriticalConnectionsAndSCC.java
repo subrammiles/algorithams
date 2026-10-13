@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Deque;
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Advanced DFS (asked at senior / staff level, e.g. "find single points of failure in a network").

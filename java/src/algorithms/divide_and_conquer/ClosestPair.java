@@ -1,4 +1,4 @@
-package algorithms.divideandconquer;
+package algorithms.divide_and_conquer;
 
 
 import java.util.*;

@@ -3,7 +3,7 @@ package interview.j_trie;
 import java.util.ArrayList;
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Trie (prefix tree). insert/search/startsWith are O(L) for a word of length L.

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Set with insert, remove and getRandom, all O(1) average.

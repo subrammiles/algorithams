@@ -1,4 +1,4 @@
-package algorithms.branchandbound;
+package algorithms.branch_and_bound;
 
 
 //Java program to solve Traveling Salesman Problem 

@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Shortest transformation sequence from beginWord to endWord, changing one letter

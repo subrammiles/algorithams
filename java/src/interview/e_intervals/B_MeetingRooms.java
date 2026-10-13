@@ -3,7 +3,7 @@ package interview.e_intervals;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Minimum number of meeting rooms needed for the given [start, end) meetings.

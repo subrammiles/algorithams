@@ -1,6 +1,6 @@
 package interview.b_binarysearch;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Median of two sorted arrays in O(log(min(m, n))).

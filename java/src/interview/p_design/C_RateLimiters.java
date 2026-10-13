@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Rate limiter - a favourite senior "low level design" question.

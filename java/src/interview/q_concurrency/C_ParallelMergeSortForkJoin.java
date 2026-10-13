@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveAction;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Divide and conquer in parallel with the Fork/Join framework (work-stealing pool).

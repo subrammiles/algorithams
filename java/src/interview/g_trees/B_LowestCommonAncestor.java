@@ -1,6 +1,6 @@
 package interview.g_trees;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Lowest common ancestor (LCA) of nodes p and q.

@@ -1,6 +1,6 @@
 package interview.g_trees;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Maximum path sum where a path is any node-to-node path (need not pass the root).

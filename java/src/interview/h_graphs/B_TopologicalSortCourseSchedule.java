@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem (Course Schedule II): prerequisites [a, b] mean b must come before a.

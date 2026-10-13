@@ -3,7 +3,7 @@ package interview.h_graphs;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Grid graphs: every cell is a node, neighbours are the 4 directions.

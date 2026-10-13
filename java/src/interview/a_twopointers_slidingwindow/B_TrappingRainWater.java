@@ -1,6 +1,6 @@
 package interview.a_twopointers_slidingwindow;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Given bar heights, compute how much rain water is trapped.

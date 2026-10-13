@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Pattern: Monotonic stack. Answers "next/previous greater/smaller element" in O(n).

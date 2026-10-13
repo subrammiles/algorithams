@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Interval pattern: almost always "sort by start, then sweep".

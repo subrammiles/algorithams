@@ -1,6 +1,6 @@
 package interview.f_linkedlist;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Detect a cycle and return the node where it begins (Linked List Cycle II).

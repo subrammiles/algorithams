@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeSet;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Union-Find (Disjoint Set Union) with path compression + union by rank:

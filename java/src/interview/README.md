@@ -2,7 +2,7 @@
 
 Pattern-first practice set. Every file is self-contained: problem statement, the approach,
 complexity, **senior follow-ups** (what an interviewer asks next), and a `main()` that checks the
-answers using [`Check`](Check.java). Run a file — it prints `PASS …` lines, or throws on a wrong answer.
+answers using [`Check`](../common/Check.java). Run a file — it prints `PASS …` lines, or throws on a wrong answer.
 
 **How to practise:** read the problem comment, delete the method body, re-implement it, run `main()`.
 Say the complexity and at least one follow-up out loud.

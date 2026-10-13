@@ -3,7 +3,7 @@ package interview.c_monotonicstack;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Largest rectangle in a histogram.

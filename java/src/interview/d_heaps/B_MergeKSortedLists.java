@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Merge k sorted linked lists into one sorted list.

@@ -3,7 +3,7 @@ package interview.o_strings;
 import java.util.ArrayList;
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Linear-time pattern matching (naive search is O(n*m); Rabin-Karp is in problems/strings/classic).

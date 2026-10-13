@@ -1,6 +1,6 @@
 package interview.a_twopointers_slidingwindow;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem (Longest Repeating Character Replacement): you may replace at most k characters.

@@ -1,6 +1,6 @@
 package interview.b_binarysearch;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Pattern: "Binary search on the answer".

@@ -2,7 +2,7 @@ package interview.f_linkedlist;
 
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Reverse the list k nodes at a time; a final group shorter than k stays as is.

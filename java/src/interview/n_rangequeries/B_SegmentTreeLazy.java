@@ -1,6 +1,6 @@
 package interview.n_rangequeries;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Segment tree with lazy propagation: range add + range sum, both O(log n).

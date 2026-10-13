@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Return all unique triplets [a, b, c] in nums with a + b + c == 0.

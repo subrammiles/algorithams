@@ -2,7 +2,7 @@ package interview.q_concurrency;
 
 import java.util.concurrent.Semaphore;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem (Print FooBar / ZeroEvenOdd family): coordinate threads so output is in a fixed order.

@@ -1,6 +1,6 @@
 package interview.k_dp;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Two-string DP: dp[i][j] describes prefixes s[0..i) and t[0..j).

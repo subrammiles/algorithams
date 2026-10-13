@@ -3,7 +3,7 @@ package interview.f_linkedlist;
 import java.util.HashMap;
 import java.util.Map;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Deep-copy a list where each node also has a random pointer.

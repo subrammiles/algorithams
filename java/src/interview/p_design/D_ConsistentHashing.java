@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Consistent hashing - how distributed caches / databases (Dynamo, Cassandra) assign keys to nodes.

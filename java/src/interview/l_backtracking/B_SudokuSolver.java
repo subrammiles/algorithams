@@ -1,6 +1,6 @@
 package interview.l_backtracking;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Solve a 9x9 Sudoku ('.' = empty).

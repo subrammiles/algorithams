@@ -1,6 +1,6 @@
 package interview.b_binarysearch;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Sorted array rotated at an unknown pivot (distinct values). Find target index or -1.

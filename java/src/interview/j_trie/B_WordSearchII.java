@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: Find all dictionary words that can be traced on a board (adjacent cells, no reuse).

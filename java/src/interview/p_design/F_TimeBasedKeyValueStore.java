@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Problem: set(key, value, timestamp); get(key, timestamp) returns the value with the largest

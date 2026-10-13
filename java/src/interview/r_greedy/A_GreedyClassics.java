@@ -1,6 +1,6 @@
 package interview.r_greedy;
 
-import interview.Check;
+import common.Check;
 
 /*
  * Greedy works when a local choice can be proven never to hurt (exchange argument).
