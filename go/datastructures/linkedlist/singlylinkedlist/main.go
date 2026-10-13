@@ -79,13 +79,13 @@ func main() {
 	link.Insert(28)
 	link.Insert(36)
 
-	fmt.Println("\n==============================\n")
+	fmt.Print("\n==============================\n\n")
 	fmt.Printf("Head: %v\n", link.head.key)
 	fmt.Printf("Tail: %v\n", link.tail.key)
 	link.Display()
-	fmt.Println("\n==============================\n")
+	fmt.Print("\n==============================\n\n")
 	fmt.Printf("head: %v\n", link.head.key)
 	fmt.Printf("tail: %v\n", link.tail.key)
 	link.Reverse()
-	fmt.Println("\n==============================\n")
+	fmt.Print("\n==============================\n\n")
 }

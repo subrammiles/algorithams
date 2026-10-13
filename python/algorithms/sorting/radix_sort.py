@@ -47,4 +47,4 @@ def radixSort(array):
 
 data = [121, 432, 564, 23, 1, 45, 788]
 radixSort(data)
-print(data
+print(data)
