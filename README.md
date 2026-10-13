@@ -1,8 +1,13 @@
 # Algorithms & interview practice
 
 Algorithms, data structure exercises and a senior-level interview track in **Java, Python,
-JavaScript and Go**. Every interview example checks its own answers, so running a file tells you
+JavaScript and Go**. Every new example checks its own answers, so running a file tells you
 whether a solution is right.
+
+Two problem sets exist in all four languages:
+
+- **Problem bank:** 42 topics, about 160 classic interview problems, grouped by technique. See below.
+- **Interview track:** 19 patterns and 53 problems, plus design and concurrency rounds.
 
 Companion repo for building the data structures themselves step by step:
 **data_structures_tutorials**.
@@ -13,19 +18,44 @@ Every language uses the same top-level groups:
 
 ```
 <language>/
-  fundamentals/     loops & patterns, recursion
-  datastructures/   linked lists, stacks, queues, hashing, trees, heaps, graphs, disjoint set
-  algorithms/       sorting, searching, greedy, dynamic programming, backtracking, graphs, ...
-  problems/         graded practice sets (arrays level1-5, strings level1-4, classic algorithms)
+  fundamentals/     recursion (+ loops & patterns in Java)
+  datastructures/   linked lists, stacks, queues, hashing, trees, heaps, graphs, disjoint set (Java)
+  algorithms/       dynamic programming, greedy, graphs, trees, backtracking, searching, sorting, divide & conquer
+  problems/         data structure problem sets (stack/queue, hashing, linked list, heap, matrix)
+                    + graded arrays/strings sets (Java)
   interview/        senior interview track, organised by pattern (a_... to s_...)
 ```
 
 | Language | Root | Most complete in |
 |---|---|---|
-| Java | `java/src/` (Eclipse/VS Code project `java_ds_daa`) | everything: fundamentals, data structures, algorithms, problems, interview |
-| Python | `python/` | interview track, sorting, searching |
-| JavaScript | `javascript/` | interview track |
-| Go | `go/` (module `algorithams`) | interview track |
+| Java | `java/src/` (Eclipse/VS Code project `java_ds_daa`) | everything, plus the older single-topic programs |
+| Python | `python/` | problem bank + interview track |
+| JavaScript | `javascript/` (shared heap in `javascript/lib/heap.js`) | problem bank + interview track |
+| Go | `go/` (module `algorithams`) | problem bank + interview track |
+
+## Problem bank (all four languages)
+
+The Java files have the longest explanations, including why each approach works, its complexity, and the
+traps interviewers look for. File letters give the suggested order.
+
+| Folder | Files | What you practise |
+|---|---|---|
+| `fundamentals/recursion` | A recursion basics, B classic recursion | base cases, memoisation, fast power, Hanoi, Josephus, phone letters, parentheses |
+| `algorithms/divide_and_conquer` | A divide and conquer | inversion count, max subarray, majority element |
+| `algorithms/dynamic_programming` ([guide](java/src/algorithms/dynamic_programming/README.md)) | A stairs/robber, B grid, C knapsack, D string, E subarray/subsequence, F **stock**, G interval/partition, H counting | the 8 DP families interviewers draw from |
+| `algorithms/greedy` | A intervals, B Huffman, C array greedy, D job sequencing, E string greedy | when greedy is provably safe (and when it isn't) |
+| `algorithms/graphs` | A traversal problems, B MST, C shortest-path variants, D multi-source BFS, E Euler path, F articulation points + Tarjan SCC, G weighted union-find, H **max flow + matching** | 0-1 BFS, A*, Hierholzer, low-link, Edmonds-Karp |
+| `algorithms/trees` | A traversal variants, B construct trees, C path problems, D BST problems, E properties, F tree DP + binary lifting | zigzag/vertical/boundary, pre+in build, prefix sums on paths, LCA queries |
+| `algorithms/backtracking` | A N-Queens, B grid/string, C combination variants | pruning, bitmasks, duplicate handling |
+| `algorithms/searching` | A binary search variants | one template for lower/upper bound, peak, sqrt, ternary search |
+| `algorithms/sorting` | A comparison sorts, B non-comparison sorts | all 8 comparison sorts + counting/radix/bucket |
+| `problems/stack_queue` | A stack problems, B queue problems | RPN, calculator, decode string, asteroids, moving average |
+| `problems/hashing` | A hashing problems | two sum, anagrams, longest consecutive, 4Sum II |
+| `problems/linked_list` | A linked list problems | merge, remove nth, palindrome, add numbers, intersection, reorder, sort |
+| `problems/heap` | A heap problems | k closest, kth largest stream, ugly numbers |
+| `problems/matrix` | A matrix problems | set zeroes O(1), staircase search, Game of Life in place |
+
+Names follow each language's style: `F_StockProblems.java` → `f_stock_problems.py` / `.js` / `.go` (+ `_test.go`).
 
 ## Interview track
 
@@ -83,9 +113,9 @@ scripts/check_all.sh              # all languages
 scripts/check_all.sh python go    # just some
 ```
 
-This compiles the whole Java tree, runs every Java interview `main`, every Python and JS file, and
-`go vet` + `go test` for Go. Older Java programs outside `interview/` are only compiled, because
-some of them read from the keyboard.
+This compiles the whole Java tree and runs every self-checking Java `main` (the ones that use
+`common.Check`). It also runs every Python and JS file, and `go vet` + `go test` for Go. Older Java
+programs are only compiled, because some of them read from the keyboard.
 
 ## Practising
 
