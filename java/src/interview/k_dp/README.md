@@ -10,7 +10,7 @@
 |---|---|---|
 | 1D linear | `dp[i]` = best for prefix i | House Robber, Coin Change, Decode Ways |
 | Subsequence | `dp[i]` or patience sorting | LIS |
-| Two strings | `dp[i][j]` over prefixes | LCS, Edit Distance (a/strings/s4), Regex Matching |
+| Two strings | `dp[i][j]` over prefixes | LCS, Edit Distance (problems/strings/level4), Regex Matching |
 | Knapsack | `dp[capacity]` | Partition Equal Subset Sum, Coin Change |
 | Interval | `dp[l][r]`, fill by length | Burst Balloons |
 | Bitmask | `dp[mask][last]` | TSP on ≤ 20 nodes |

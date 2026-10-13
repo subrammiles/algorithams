@@ -14,7 +14,7 @@ import interview.Check;
  *    dp[l][r] = max(dp[l][k] + dp[k][r] + v[l]*v[k]*v[r]). Fill by increasing interval length. O(n^3).
  *
  * 3. Travelling Salesman (bitmask DP, n <= ~20): dp[mask][i] = min cost to visit set `mask`
- *    ending at i. O(2^n * n^2). Compare with branch_and_bound/TravelingSalesman.java.
+ *    ending at i. O(2^n * n^2). Compare with algorithms/branchandbound/TravelingSalesman.java.
  */
 public class D_KnapsackIntervalBitmaskDP {
 

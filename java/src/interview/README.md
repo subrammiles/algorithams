@@ -45,9 +45,11 @@ Say the complexity and at least one follow-up out loud.
   (locking, lock striping), or many machines (consistent hashing, map-reduce top-k)?
 - **Trade-offs over tricks**: say why you picked a TreeMap over a heap, BFS over DFS, etc.
 
-## Existing material in this repo by topic
+## Related material in this repo
 
-Fundamentals already covered elsewhere in `java/src`: arrays (`a/arrays`), strings (`a/strings`),
-recursion (`a/recursion`), stacks/queues (`ds/`), trees, heaps, AVL/red-black/B-trees (`b/trees`),
-graphs (`b/graphs`, `c/greedy_graphs`, `c/dp_graps`), sorting/searching (`c/Sorting`, `c/searching`),
-greedy, backtracking and DP basics (`c/`).
+- Fundamentals: `fundamentals/` (loops & patterns, recursion)
+- Data structures: `datastructures/` (linked lists, stacks, queues, hashing, trees, heaps, graphs, disjoint set)
+- Algorithms: `algorithms/` (sorting, searching, greedy, dynamic programming, backtracking, graphs, divide & conquer)
+- Graded practice: `problems/arrays/level1..5`, `problems/strings/level1..4` and their `classic/` algorithms
+
+The same interview track exists in Python, JavaScript and Go — see the [repo README](../../../README.md).

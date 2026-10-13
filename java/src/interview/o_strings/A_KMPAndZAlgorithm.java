@@ -6,7 +6,7 @@ import java.util.List;
 import interview.Check;
 
 /*
- * Linear-time pattern matching (naive search is O(n*m); Rabin-Karp is in a/strings/standardalgorithams).
+ * Linear-time pattern matching (naive search is O(n*m); Rabin-Karp is in problems/strings/classic).
  *
  * KMP: lps[i] = length of the longest proper prefix of p[0..i] that is also a suffix.
  *   On a mismatch, jump the pattern pointer to lps[j-1] instead of restarting. O(n + m).

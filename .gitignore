@@ -1,0 +1,9 @@
+.DS_Store
+*.class
+bin/
+out/
+__pycache__/
+node_modules/
+# compiled C programs
+c/**/runme
+c/**/*.out

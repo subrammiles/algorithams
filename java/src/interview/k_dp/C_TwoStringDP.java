@@ -11,7 +11,7 @@ import interview.Check;
  *    if p[j-1] == '*': dp[i][j] = dp[i][j-2] (use zero times)
  *                                 || (first char matches && dp[i-1][j]) (use once more)
  *    else: dp[i][j] = first char matches && dp[i-1][j-1]
- * (Edit distance lives in a/strings/s4/EditDistanceProblem.java.)
+ * (Edit distance lives in problems/strings/level4/EditDistanceProblem.java.)
  */
 public class C_TwoStringDP {
 
