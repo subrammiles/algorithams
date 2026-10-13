@@ -7,6 +7,12 @@ answers using [`Check`](Check.java). Run a file — it prints `PASS …` lines, 
 **How to practise:** read the problem comment, delete the method body, re-implement it, run `main()`.
 Say the complexity and at least one follow-up out loud.
 
+**Other languages:** the same problems live in the same folders under
+[`python/interview`](../../../python/interview), [`javascript/interview`](../../../javascript/interview)
+and [`go/interview`](../../../go/interview), with snake_case file names
+(`C_MedianFromDataStream.java` → `c_median_from_data_stream.py` / `.js` / `.go`). The links below point
+to the Java versions, which have the longest explanations.
+
 ## Coding patterns
 
 | # | Pattern | Recognise it when… | Files |
@@ -52,4 +58,4 @@ Say the complexity and at least one follow-up out loud.
 - Algorithms: `algorithms/` (sorting, searching, greedy, dynamic programming, backtracking, graphs, divide & conquer)
 - Graded practice: `problems/arrays/level1..5`, `problems/strings/level1..4` and their `classic/` algorithms
 
-The same interview track exists in Python, JavaScript and Go — see the [repo README](../../../README.md).
+See the [repo README](../../../README.md) for the full layout and how to run each language.
