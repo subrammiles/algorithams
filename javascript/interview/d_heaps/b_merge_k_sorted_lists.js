@@ -2,7 +2,7 @@
  * Merge k sorted linked lists with a min-heap of current heads. O(N log k).
  */
 const assert = require('node:assert/strict');
-const { Heap } = require('../lib/heap');
+const { Heap } = require('../../lib/heap');
 
 const node = (val, next = null) => ({ val, next });
 const build = (...values) => values.reduceRight((next, v) => node(v, next), null);

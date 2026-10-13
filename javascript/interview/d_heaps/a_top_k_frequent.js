@@ -2,7 +2,7 @@
  * Top k frequent: size-k min-heap O(n log k), bucket sort O(n); kth largest by quickselect.
  */
 const assert = require('node:assert/strict');
-const { Heap } = require('../lib/heap');
+const { Heap } = require('../../lib/heap');
 
 function frequencies(nums) {
   const freq = new Map();

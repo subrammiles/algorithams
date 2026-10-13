@@ -2,7 +2,7 @@
  * Minimum meeting rooms: heap of end times, or sweep line over sorted starts/ends. O(n log n).
  */
 const assert = require('node:assert/strict');
-const { Heap } = require('../lib/heap');
+const { Heap } = require('../../lib/heap');
 
 function minRoomsHeap(meetings) {
   const ends = new Heap();

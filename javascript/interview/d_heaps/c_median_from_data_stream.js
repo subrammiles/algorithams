@@ -2,7 +2,7 @@
  * Running median with two heaps: max-heap low half, min-heap high half. add O(log n), median O(1).
  */
 const assert = require('node:assert/strict');
-const { Heap } = require('../lib/heap');
+const { Heap } = require('../../lib/heap');
 
 class MedianFinder {
   low = new Heap((a, b) => b - a);

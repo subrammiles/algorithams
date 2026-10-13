@@ -2,7 +2,7 @@
  * Network delay time (Dijkstra, lazy deletion) and cheapest flights within K stops (Bellman-Ford rounds).
  */
 const assert = require('node:assert/strict');
-const { Heap } = require('../lib/heap');
+const { Heap } = require('../../lib/heap');
 
 function networkDelayTime(times, n, source) {
   const graph = new Map();
