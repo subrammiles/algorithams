@@ -40,3 +40,34 @@ func LadderLength(begin, end string, wordList []string) int {
 	}
 	return 0
 }
+
+// LadderLengthBFS is plain one-directional BFS, kept for comparison.
+func LadderLengthBFS(begin, end string, wordList []string) int {
+	dict := map[string]bool{}
+	for _, w := range wordList {
+		dict[w] = true
+	}
+	queue := []string{begin}
+	for steps := 1; len(queue) > 0; steps++ {
+		var next []string
+		for _, w := range queue {
+			if w == end {
+				return steps
+			}
+			b := []byte(w)
+			for i := range b {
+				original := b[i]
+				for c := byte('a'); c <= 'z'; c++ {
+					b[i] = c
+					if cand := string(b); dict[cand] {
+						delete(dict, cand) // mark visited
+						next = append(next, cand)
+					}
+				}
+				b[i] = original
+			}
+		}
+		queue = next
+	}
+	return 0
+}

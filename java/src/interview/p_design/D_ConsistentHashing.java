@@ -81,5 +81,10 @@ public class D_ConsistentHashing {
 		Check.isTrue("moved keys only go to the new node", onlyToNewNode);
 		System.out.println("Keys moved after adding a 4th node: " + moved + " of " + keys);
 		Check.isTrue("about 1/4 moved, not ~all", moved < keys / 2);
+
+		ch.removeNode("cache-D");
+		boolean backToBefore = true;
+		for (int i = 0; i < keys; i++) backToBefore &= ch.nodeFor("user:" + i).equals(before.get("user:" + i));
+		Check.isTrue("removing cache-D moves only its keys back", backToBefore);
 	}
 }

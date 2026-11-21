@@ -6,7 +6,7 @@ whether a solution is right.
 
 Two problem sets exist in all four languages:
 
-- **Problem bank:** 42 topics, about 160 classic interview problems, grouped by technique. See below.
+- **Problem bank:** 46 topics, about 175 classic interview problems, grouped by technique. See below.
 - **Interview track:** 20 patterns and 62 problems, plus design and concurrency rounds.
 
 Companion repo for building the data structures themselves step by step:
@@ -41,15 +41,15 @@ traps interviewers look for. File letters give the suggested order.
 | Folder | Files | What you practise |
 |---|---|---|
 | `fundamentals/recursion` | A recursion basics, B classic recursion | base cases, memoisation, fast power, Hanoi, Josephus, phone letters, parentheses |
-| `algorithms/divide_and_conquer` | A divide and conquer | inversion count, max subarray, majority element |
+| `algorithms/divide_and_conquer` | A divide and conquer, B closest pair | inversion count, max subarray, majority element, closest pair of points |
 | `algorithms/dynamic_programming` ([guide](java/src/algorithms/dynamic_programming/README.md)) | A stairs/robber, B grid, C knapsack, D string, E subarray/subsequence, F **stock**, G interval/partition, H counting | the 8 DP families interviewers draw from |
-| `algorithms/greedy` | A intervals, B Huffman, C array greedy, D job sequencing, E string greedy | when greedy is provably safe (and when it isn't) |
+| `algorithms/greedy` | A intervals, B Huffman, C array greedy, D job sequencing, E string greedy, F classic greedy | when greedy is provably safe (and when it isn't); fractional knapsack, mice to holes, policemen and thieves |
 | `algorithms/graphs` | A traversal problems, B MST, C shortest-path variants, D multi-source BFS, E Euler path, F articulation points + Tarjan SCC, G weighted union-find, H **max flow + matching** | 0-1 BFS, A*, Hierholzer, low-link, Edmonds-Karp |
 | `algorithms/trees` | A traversal variants, B construct trees, C path problems, D BST problems, E properties, F tree DP + binary lifting | zigzag/vertical/boundary, pre+in build, prefix sums on paths, LCA queries |
-| `algorithms/backtracking` | A N-Queens, B grid/string, C combination variants | pruning, bitmasks, duplicate handling |
+| `algorithms/backtracking` | A N-Queens, B grid/string, C combination variants, D classic backtracking | pruning, bitmasks, duplicate handling; rat in a maze, m-colouring, Hamiltonian cycle, knight's tour |
 | `algorithms/searching` | A binary search variants | one template for lower/upper bound, peak, sqrt, ternary search |
 | `algorithms/sorting` | A comparison sorts, B non-comparison sorts | all 8 comparison sorts + counting/radix/bucket |
-| `problems/stack_queue` | A stack problems, B queue problems | RPN, calculator, decode string, asteroids, moving average |
+| `problems/stack_queue` | A stack problems, B queue problems, C infix to postfix | RPN, calculator, decode string, asteroids, moving average, shunting-yard |
 | `problems/hashing` | A hashing problems | two sum, anagrams, longest consecutive, 4Sum II |
 | `problems/linked_list` | A linked list problems | merge, remove nth, palindrome, add numbers, intersection, reorder, sort |
 | `problems/heap` | A heap problems | k closest, kth largest stream, ugly numbers |

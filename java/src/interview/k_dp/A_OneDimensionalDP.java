@@ -35,6 +35,25 @@ public class A_OneDimensionalDP {
 		return dp[amount] > amount ? -1 : dp[amount];
 	}
 
+	/* Same recurrence as memoised recursion - often the easier first step in an interview. */
+	static int coinChangeMinTopDown(int[] coins, int amount) {
+		int[] memo = new int[amount + 1];
+		Arrays.fill(memo, -2); // -2 = not computed yet, -1 = impossible
+		return fewestCoins(coins, amount, memo);
+	}
+
+	private static int fewestCoins(int[] coins, int a, int[] memo) {
+		if (a == 0) return 0;
+		if (memo[a] != -2) return memo[a];
+		int best = -1;
+		for (int coin : coins) {
+			if (coin > a) continue;
+			int sub = fewestCoins(coins, a - coin, memo);
+			if (sub >= 0 && (best < 0 || sub + 1 < best)) best = sub + 1;
+		}
+		return memo[a] = best;
+	}
+
 	static int coinChangeWays(int[] coins, int amount) {
 		int[] dp = new int[amount + 1];
 		dp[0] = 1;
@@ -61,6 +80,8 @@ public class A_OneDimensionalDP {
 		Check.eq("rob", rob(new int[] { 2, 7, 9, 3, 1 }), 12);
 		Check.eq("coin min", coinChangeMin(new int[] { 1, 3, 4 }, 6), 2);
 		Check.eq("coin impossible", coinChangeMin(new int[] { 2 }, 3), -1);
+		Check.eq("coin min top-down", coinChangeMinTopDown(new int[] { 1, 3, 4 }, 6), 2);
+		Check.eq("coin impossible top-down", coinChangeMinTopDown(new int[] { 2 }, 3), -1);
 		Check.eq("coin ways", coinChangeWays(new int[] { 1, 2, 5 }, 5), 4);
 		Check.eq("decode 226", numDecodings("226"), 3);
 		Check.eq("decode 06", numDecodings("06"), 0);

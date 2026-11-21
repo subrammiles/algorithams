@@ -15,6 +15,21 @@ function coinChangeMin(coins, amount) {
   return dp[amount] > amount ? -1 : dp[amount];
 }
 
+// Same recurrence as memoised recursion - often the easier first step in an interview.
+function coinChangeMinTopDown(coins, amount) {
+  const memo = new Map();
+  const best = (a) => {
+    if (a === 0) return 0;
+    if (memo.has(a)) return memo.get(a);
+    let result = Infinity;
+    for (const c of coins) if (c <= a) result = Math.min(result, best(a - c) + 1);
+    memo.set(a, result);
+    return result;
+  };
+  const result = best(amount);
+  return result === Infinity ? -1 : result;
+}
+
 function coinChangeWays(coins, amount) {
   const dp = [1, ...new Array(amount).fill(0)];
   for (const c of coins) for (let a = c; a <= amount; a++) dp[a] += dp[a - c]; // coins outer: combinations
@@ -35,6 +50,8 @@ function numDecodings(s) {
 assert.equal(rob([2, 7, 9, 3, 1]), 12);
 assert.equal(coinChangeMin([1, 3, 4], 6), 2);
 assert.equal(coinChangeMin([2], 3), -1);
+assert.equal(coinChangeMinTopDown([1, 3, 4], 6), 2);
+assert.equal(coinChangeMinTopDown([2], 3), -1);
 assert.equal(coinChangeWays([1, 2, 5], 5), 4);
 assert.equal(numDecodings('226'), 3);
 assert.equal(numDecodings('06'), 0);

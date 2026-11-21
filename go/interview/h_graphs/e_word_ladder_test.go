@@ -7,4 +7,7 @@ func TestWordLadder(t *testing.T) {
 	if LadderLength("hit", "cog", words) != 5 || LadderLength("hit", "cog", words[:5]) != 0 {
 		t.Fatal("word ladder")
 	}
+	if LadderLengthBFS("hit", "cog", words) != 5 || LadderLengthBFS("hit", "cog", words[:5]) != 0 {
+		t.Fatal("word ladder plain bfs")
+	}
 }

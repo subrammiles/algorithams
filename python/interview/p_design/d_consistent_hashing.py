@@ -49,4 +49,8 @@ if __name__ == "__main__":
     print(f"moved after adding a 4th node: {len(moved)} of {len(keys)}")
     assert all(ring.node_for(k) == "cache-D" for k in moved)
     assert len(moved) < len(keys) // 2
+    with_d = {k: ring.node_for(k) for k in keys}
+    ring.remove_node("cache-D")
+    assert all(with_d[k] == "cache-D" or ring.node_for(k) == with_d[k] for k in keys)  # only D's keys move
+    assert all(ring.node_for(k) == before[k] for k in keys)  # back to the 3-node layout
     print("all checks passed")

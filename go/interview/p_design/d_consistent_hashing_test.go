@@ -34,4 +34,17 @@ func TestHashRing(t *testing.T) {
 	if moved > 5000 {
 		t.Fatalf("too many keys moved: %d", moved)
 	}
+	withD := map[string]string{}
+	for k := range before {
+		withD[k] = ring.NodeFor(k)
+	}
+	ring.RemoveNode("cache-D")
+	for k, old := range before {
+		if now := ring.NodeFor(k); now != old {
+			t.Fatalf("after removing cache-D, %s is on %s, want %s", k, now, old)
+		}
+		if withD[k] != "cache-D" && ring.NodeFor(k) != withD[k] {
+			t.Fatalf("%s moved although it was not on cache-D", k)
+		}
+	}
 }

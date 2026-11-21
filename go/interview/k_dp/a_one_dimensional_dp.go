@@ -28,6 +28,32 @@ func CoinChangeMin(coins []int, amount int) int {
 	return dp[amount]
 }
 
+// CoinChangeMinTopDown: the same recurrence as memoised recursion - often the easier first step.
+func CoinChangeMinTopDown(coins []int, amount int) int {
+	memo := map[int]int{} // -1 = impossible
+	var best func(a int) int
+	best = func(a int) int {
+		if a == 0 {
+			return 0
+		}
+		if v, ok := memo[a]; ok {
+			return v
+		}
+		result := -1
+		for _, c := range coins {
+			if c > a {
+				continue
+			}
+			if sub := best(a - c); sub >= 0 && (result < 0 || sub+1 < result) {
+				result = sub + 1
+			}
+		}
+		memo[a] = result
+		return result
+	}
+	return best(amount)
+}
+
 // CoinChangeWays loops coins outer to count combinations, not permutations.
 func CoinChangeWays(coins []int, amount int) int {
 	dp := make([]int, amount+1)

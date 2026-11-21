@@ -32,6 +32,20 @@ func (r *HashRing) AddNode(node string) {
 	sort.Slice(r.positions, func(i, j int) bool { return r.positions[i] < r.positions[j] })
 }
 
+// RemoveNode drops a node's virtual nodes; only its keys move (to the next node clockwise).
+func (r *HashRing) RemoveNode(node string) {
+	for i := 0; i < r.virtualNodes; i++ {
+		delete(r.owner, ringHash(node+"#"+strconv.Itoa(i)))
+	}
+	kept := r.positions[:0]
+	for _, h := range r.positions {
+		if _, ok := r.owner[h]; ok {
+			kept = append(kept, h)
+		}
+	}
+	r.positions = kept
+}
+
 func (r *HashRing) NodeFor(key string) string {
 	h := ringHash(key)
 	i := sort.Search(len(r.positions), func(i int) bool { return r.positions[i] >= h })
