@@ -7,7 +7,7 @@ whether a solution is right.
 Two problem sets exist in all four languages:
 
 - **Problem bank:** 42 topics, about 160 classic interview problems, grouped by technique. See below.
-- **Interview track:** 19 patterns and 53 problems, plus design and concurrency rounds.
+- **Interview track:** 20 patterns and 62 problems, plus design and concurrency rounds.
 
 Companion repo for building the data structures themselves step by step:
 **data_structures_tutorials**.
@@ -23,7 +23,7 @@ Every language uses the same top-level groups:
   algorithms/       dynamic programming, greedy, graphs, trees, backtracking, searching, sorting, divide & conquer
   problems/         data structure problem sets (stack/queue, hashing, linked list, heap, matrix)
                     + graded arrays/strings sets (Java)
-  interview/        senior interview track, organised by pattern (a_... to s_...)
+  interview/        senior interview track, organised by pattern (a_... to t_...)
 ```
 
 | Language | Root | Most complete in |
@@ -59,7 +59,7 @@ Names follow each language's style: `F_StockProblems.java` → `f_stock_problems
 
 ## Interview track
 
-19 patterns and 53 problems, implemented the same way in all four languages. The roadmap, with what each
+20 patterns and 62 problems, implemented the same way in all four languages. The roadmap, with what each
 pattern is for and what changes at senior level, is in
 [java/src/interview/README.md](java/src/interview/README.md).
 
@@ -76,12 +76,12 @@ The same problem has the same folder in every language, with file names followin
 | b | Binary search (incl. on the answer) | l | Backtracking |
 | c | Monotonic stack | m | Bit manipulation |
 | d | Heaps / top-k / k-way merge | n | Range queries (Fenwick, lazy segment tree) |
-| e | Intervals | o | String matching (KMP, Z) |
-| f | Linked lists | p | **Design**: LRU, LFU, rate limiter, consistent hashing, ... |
-| g | Trees | q | **Concurrency**: blocking queue, ordered threads, parallel sort |
+| e | Intervals + sweep line (skyline) | o | String matching (KMP, Z, Rabin-Karp, Manacher) |
+| f | Linked lists | p | **Design**: LRU, LFU, rate limiter, consistent hashing, Twitter feed, ... |
+| g | Trees | q | **Concurrency**: blocking queue, ordered threads, parallel sort, read-write lock, worker pool |
 | h | Graphs (topo sort, Dijkstra, Bellman-Ford, bridges, SCC) | r | Greedy |
 | i | Union-find | s | Math, matrix, randomized |
-| j | Tries | | |
+| j | Tries | t | **Array techniques**: cyclic sort, Dutch flag, next permutation, difference array |
 
 Each language uses its own concurrency model for section `q`. Java uses locks/conditions and
 Fork/Join. Python uses `threading.Condition`, plus processes for CPU-bound work because of the GIL.

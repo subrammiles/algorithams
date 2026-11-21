@@ -15,3 +15,5 @@
 | Interval | `dp[l][r]`, fill by length | Burst Balloons |
 | Bitmask | `dp[mask][last]` | TSP on ≤ 20 nodes |
 | Grid | `dp[r][c]` | Unique paths, min path sum |
+| Digit | `(pos, tight, started, state)` | Count numbers ≤ n with distinct digits |
+| Subset bitmask | `dp[mask]` = partial bucket fill | Partition into k equal subsets |
